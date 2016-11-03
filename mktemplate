@@ -1,0 +1,8 @@
+CC = icc
+CPC = icpc
+FC = ifort
+LD = ifort
+LIST = -listing
+CCFLAGS = -O2 -openmp -parallel -vec-report0 -openmp-report0
+FFLAGS = -O2 -openmp -parallel -vec-report0 -openmp-report0 -assume buffered_io -convert big_endian -r8 -mkl
+LDFLAGS = -O2 -openmp -parallel -vec-report0 -openmp-report0 -assume buffered_io -convert big_endian -r8 -cxxlib -mkl
